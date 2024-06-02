@@ -25,8 +25,8 @@ if (!process.argv[2]) {
 }
 
 let text = process.argv.join(' ').substring(process.argv[0].length + process.argv[1].length + 2)
-if (text.length > 452) {
-    log('255 100 100', 'ERR  ## Невозможно создать QR-Код превышающий 452 символа')
+if (text.length > 1506) {
+    log('255 100 100', 'ERR  ## Невозможно создать QR-Код превышающий 1506 символов')
     canrun = 0
 }
 
