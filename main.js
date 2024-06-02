@@ -9,9 +9,7 @@ let ini = readFileSync('qrcode-gen.ini', { encoding: 'utf8' }).split('\n')
 
 let ini2 = {
     first: ini[0].replace(/\r$/, ''),
-    second: ini[1].replace(/\r$/, ''),
-    mainColor: ini[2].replace(/\r$/, ''),
-    color: ini[3].replace(/\r$/, '')
+    second: ini[1].replace(/\r$/, '')
 }
 
 let time = String(new Date()).split(' ')
